@@ -86,3 +86,18 @@ The component system is the foundation for building large apps with Vue.js. In a
 
 #The Vue Instance
 
+##Constructor
+
+Every Vue.js app is bootstrapped by creating a **root Vue instance** with the `Vue` constructor function:
+
+    var vm = new Vue({
+        //options
+    })
+
+A Vue instance is essentially a ViewModel as defined in the MVVM pattern, hence the variable name `vm` you will see throughout the docs.
+
+When you instantiate a Vue instance, you need to pass in an **options object** which can contain options for data, template, element to mount on, methods, lifecycle callbacks and more. The full list of options can be found in the API reference.
+
+The `Vue` constructor can be extended to create reusable **component constructors** with pre-defined options:
+
+    
